@@ -1,4 +1,4 @@
-import os, wget, re
+l Aimport os, wget, re
 from pydub import AudioSegment
 from pydub.utils import make_chunks
 import assemblyai as aai
@@ -43,8 +43,8 @@ def chunk_wav(wav_path, chunk_size_ms):
 
 def convert_to_text(chunk_file):
     """
-    Converts an audio file to speech using Googles Speech to Text
-    params: data - the audio files that need to be converted to text
+    Converts an audio file to speech using AssemblyAI
+    params: chunk_file - the audio files that need to be converted to text
     return: text of the audio file
     """
     file_path = os.path.join(CHUNKS_DIR, chunk_file)
